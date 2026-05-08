@@ -1,0 +1,106 @@
+{
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "vibe": "The Architect. Precise, ordered, authoritative, yet approachable. High-end Swiss minimalism.",
+  "colors": {
+    "background": "#FAFAFA",
+    "surface": "#F0F0F0",
+    "surface_glass": "rgba(255, 255, 255, 0.7)",
+    "text_primary": "#111111",
+    "text_secondary": "#555555",
+    "accent_primary": "#002FA7",
+    "accent_hover": "#001D6E",
+    "border": "rgba(0, 0, 0, 0.1)"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "body_font": "IBM Plex Sans",
+    "mono_font": "JetBrains Mono",
+    "h1": "text-6xl sm:text-7xl lg:text-8xl tracking-tighter leading-none font-black",
+    "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-bold",
+    "h3": "text-xl sm:text-2xl font-semibold",
+    "body": "text-base leading-relaxed",
+    "overline": "text-xs uppercase tracking-[0.2em] font-mono text-gray-500"
+  },
+  "layout": {
+    "spacing_scale": "Generous (p-8 to p-24). Avoid cramming.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "radius": "rounded-none",
+    "surface_strategy": "Grid Borders: expose the skeleton. Use 1px borders (border-black/10) to separate sections, no shadows, pure flat layouts. Sharp edges."
+  },
+  "sections": [
+    {
+      "name": "Hero",
+      "layout": "2-column asymmetrical. Left: Massive typography (Name, Role). Right: Sharp rectangular mask with Headshot. Grid lines extending to the edges.",
+      "components": ["Heading", "Tagline", "Primary CTA (Klein Blue)", "Secondary CTA (Outline)"],
+      "interactions": "Reveal animation on text. Very subtle scale on image."
+    },
+    {
+      "name": "About",
+      "layout": "Editorial text block occupying 8 columns of a 12-column grid. Highlight '12 Years' in massive monospace font.",
+      "components": ["Large Body Text", "Stat Highlights"]
+    },
+    {
+      "name": "Experience",
+      "layout": "Data table layout. Rows with 1px top/bottom borders. Columns: Years (Monospace) | Role | Company & details. Hover effect: background turns slightly grey (#F0F0F0).",
+      "components": ["Table/List view"]
+    },
+    {
+      "name": "Skills",
+      "layout": "Bento 'Control Room' Grid. Strict square boxes with 1px borders. Text centered or bottom-left aligned. Minimalist.",
+      "components": ["Grid items for TDM, Agile, Leadership, etc."]
+    },
+    {
+      "name": "Projects",
+      "layout": "Alternating asymmetrical rows. Image on one side, text block on the other. Images use abstract tech photography.",
+      "components": ["Project Card (Flat, bordered)"]
+    },
+    {
+      "name": "Testimonials",
+      "layout": "Massive typography for quotes. Swiss poster style. Author details in monospace below.",
+      "components": ["Quote Block"]
+    },
+    {
+      "name": "Contact",
+      "layout": "Giant 'Let's Talk' text taking up the full width. Simple text links for Email and LinkedIn. No form.",
+      "components": ["Footer Links", "Giant Text"]
+    }
+  ],
+  "components_customization": {
+    "buttons": "Sharp corners (rounded-none). Primary: bg-[#002FA7] text-white hover:bg-[#001D6E]. Secondary: bg-transparent border border-black text-black hover:bg-black hover:text-white. Use 'data-testid' for all buttons.",
+    "cards": "No standard cards. Use pure divs with 1px border (border-black/10) and p-8. No shadows.",
+    "navigation": "Sticky glassmorphism header (bg-white/70 backdrop-blur-xl). Sharp bottom border. Logo left, Links right."
+  },
+  "media": {
+    "hero_headshot": {
+      "url": "https://images.unsplash.com/photo-1758876204244-930299843f07?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMG1vZGVybiUyMG9mZmljZXxlbnwwfHx8fDE3NzgyNjkwODd8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Professional Headshot",
+      "usage": "Hero section portrait. Place inside a strict rectangular container (rounded-none)."
+    },
+    "project_bg_1": {
+      "url": "https://images.unsplash.com/photo-1767099490504-652415837b9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZ3JpZCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzgyNjkxMDN8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract minimalist grid",
+      "usage": "Background or visual for Case Study 1 (Data Migration/Architecture)"
+    },
+    "project_bg_2": {
+      "url": "https://images.unsplash.com/photo-1774791242463-ad4fd6386cb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxkYXRhJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0JTIwbWluaW1hbHxlbnwwfHx8fDE3NzgyNjkxMDN8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract data streaks",
+      "usage": "Visual for Case Study 2 (Test Data Management Setup)"
+    }
+  },
+  "motion": {
+    "global": "Subtle, precise. Use Framer Motion for revealing text on scroll (y-axis slide up, opacity). No bouncy animations. Easing should be custom cubic-bezier(0.16, 1, 0.3, 1) for a 'snappy but smooth' feel."
+  },
+  "icons": "Use 'lucide-react' with crisp stroke-width (1.5). For tech stacks, use 'react-icons'.",
+  "instructions_to_main_agent": [
+    "Build a single-page React portfolio using Tailwind CSS.",
+    "Implement the 'Swiss & High-Contrast' archetype. Rely on stark white backgrounds, black text, and precise 1px borders (border-black/10).",
+    "Do NOT use standard rounded cards or heavy drop shadows. Everything must be sharp (rounded-none).",
+    "Use Cabinet Grotesk for headings, IBM Plex Sans for body, and JetBrains Mono for dates/tags. Install via Google Fonts or Fontsource.",
+    "For the Experience section, avoid standard timelines. Build it like a raw HTML data table or border-collapse grid to emphasize 'Data Management'.",
+    "Include 'data-testid' attributes on all links, buttons, and navigation items.",
+    "Contact section should NOT have a form. Just mailto and linkedin links with massive 'Let's Talk' text.",
+    "The hero section should feature the headshot provided in the media section, strictly contained in a sharp rectangle.",
+    "No generic gradients. Use the provided abstract images for project cards."
+  ]
+}
