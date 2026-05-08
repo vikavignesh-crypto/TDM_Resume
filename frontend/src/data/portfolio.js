@@ -1,151 +1,182 @@
-// Portfolio content - placeholders, edit freely.
+// Portfolio content. Sourced from Vigneshwaran B's résumé.
 
 export const profile = {
-  name: "Alex Morgan",
-  firstName: "Alex",
-  lastName: "Morgan",
-  role: "Project Manager — Test Data Management",
-  location: "Remote · Available Worldwide",
-  yearsOfExperience: 12,
+  name: "Vigneshwaran Balasubramanian",
+  firstName: "Vigneshwaran",
+  lastName: "Balasubramanian",
+  shortName: "Vigneshwaran B",
+  initials: "VB",
+  role: "Technical Manager — Test Data Management · Delphix",
+  location: "Palani, India · Onsite / Offshore delivery",
+  yearsOfExperience: 11,
+  currentlyAt: "Currently TDM Technical Manager @ TCS · Truist",
   tagline:
-    "I lead Test Data Management programmes that turn fragile pipelines into compliant, repeatable, audit-ready systems.",
-  email: "contact@example.com",
-  phone: "+1 (555) 010-1234",
+    "I run enterprise Test Data Management programmes — Delphix-led, audit-ready, and built to deliver compliant data on demand across global teams.",
+  email: "vika.vignesh@gmail.com",
+  phone: "+91 81058 24667",
   links: {
-    linkedin: "https://www.linkedin.com/in/example",
-    github: "https://github.com/example",
+    linkedin: "https://www.linkedin.com/in/vigneshwaranbalasubramanian",
+    linkedinHandle: "/in/vigneshwaranbalasubramanian",
     resume: "/resume.pdf",
   },
   intro: [
-    "Twelve years building, breaking and rebuilding the systems behind enterprise software delivery.",
-    "Today I run a Test Data Management programme for a regulated, multi-region platform — orchestrating the people, the policies, and the pipelines that make 'safe data, on demand' a reality.",
-    "I believe great project management is mostly about removing surprise: predictable releases, traceable decisions, and teams that ship without heroics.",
+    "Eleven years across Test Data Management, .NET delivery and infrastructure engineering — currently Assistant Consultant / Technical Manager at Tata Consultancy Services, leading the TDM Distributed Infrastructure team for Truist.",
+    "Day to day I architect Delphix landscapes (40 Continuous Data + 8 Continuous Compliance + 3 Hyperscale engines), drive engine upgrades, evaluate licensing and SOWs, and turn ad-hoc requests into a self-service, on-demand BAU process.",
+    "Before TDM I shipped enterprise .NET for Vedanta and GlaxoSmithKline, and ran a 230 TB Delphix-as-a-Service engagement on-site in the UK for TUI — masking 10 billion+ sensitive records every week with zero audit findings.",
   ],
   stats: [
-    { value: "12", label: "Years in IT" },
-    { value: "40+", label: "Programs delivered" },
-    { value: "9", label: "Industries" },
-    { value: "0", label: "Audit findings, FY24" },
+    { value: "11", label: "Years in IT" },
+    { value: "10B+", label: "Records masked / week" },
+    { value: "230 TB", label: "dSource managed" },
+    { value: "£3.78M", label: "Annual client ROI" },
   ],
 };
 
 export const experience = [
   {
-    years: "2023 — Now",
-    role: "Project Manager, Test Data Management",
-    company: "Northwind Financial Services",
+    years: "2021 — Now",
+    role: "Assistant Consultant / Technical Manager",
+    company: "Tata Consultancy Services",
     detail:
-      "Owns the end-to-end TDM programme: data masking, synthetic generation, on-demand provisioning across 14 environments. Cut data prep time 78%.",
+      "Offshore lead for TDM Distributed/Infra on Truist. Owns 40 CD + 8 CC + 3 Hyperscale Delphix engines, SOW & SLM contract reviews, hiring panel, and BAU automations. POCs: Salesforce, SAP HANA, Netezza, MongoDB.",
   },
   {
-    years: "2020 — 2023",
-    role: "Senior Delivery Manager",
-    company: "Helix Digital",
+    years: "2019 — 2021",
+    role: "Lead Analyst — Delphix Admin & Masking SME",
+    company: "GYR IT Solutions · TUI (UK onsite, Systems Plus)",
     detail:
-      "Led 6-stream agile programme rebuilding the QA platform. Introduced TDM-as-a-Service and shift-left test strategy across 9 product teams.",
+      "Delphix-as-a-Service for TUI: 9 engines, 230+ TB dSource, 10B+ records masked weekly. Refresh/Mask automation in PowerShell + Shell, Jenkins, dxToolkit. Delivered ~£3.78M annual savings.",
   },
   {
-    years: "2017 — 2020",
-    role: "Test Lead / Scrum Master",
-    company: "Avant Health",
+    years: "2018 — 2019",
+    role: "Technology Analyst",
+    company: "Infosys Limited",
     detail:
-      "Drove HIPAA-compliant test data flows. Built reusable masking libraries reused by 20+ teams. Trained 60+ engineers in risk-based testing.",
+      "Short tenure — moved into the Delphix specialist track. Earlier engaged with Medwell Ventures (Nightingales.in) as Transition Lead: KT, roadmap and capacity planning.",
+  },
+  {
+    years: "2017 — 2018",
+    role: "Software Engineer · Team Lead",
+    company: "Enaviya Information Technology",
+    detail:
+      "Led .NET delivery for GlaxoSmithKline (Manufacturing Messaging) and Hindustan Zinc / Vedanta (Digital Shift Reporting, Resources & Reserves, Process Safety, Safety Interaction). C#, Oracle 12C, Web API.",
   },
   {
     years: "2014 — 2017",
-    role: "QA Engineer → QA Lead",
-    company: "Caelum Systems",
+    role: "Software Developer",
+    company: "Dimexon Integrated Business Services",
     detail:
-      "Hands-on automation in Selenium/Java. Migrated regression suite from 22 hours to 47 minutes through parallelisation and data isolation.",
-  },
-  {
-    years: "2013 — 2014",
-    role: "Junior QA Engineer",
-    company: "Pendrel Labs",
-    detail:
-      "First role. Manual + scripted testing for an early SaaS product. Learned the craft of writing tests that actually fail when something is wrong.",
+      "Built RMS, O2S and SCM modules of the IMAS jewellery ERP. ASP.NET, VB.NET, Oracle 12C, PL/SQL. Also shipped an iOS 7 e-Catalog app and an internal Travel & Canteen portal.",
   },
 ];
 
 export const skills = [
-  { group: "Programme", items: ["TDM Strategy", "Agile / SAFe", "Risk Management", "Stakeholder Mgmt"] },
-  { group: "TDM Tooling", items: ["Informatica TDM", "Delphix", "K2View", "Synthetic Data"] },
-  { group: "Compliance", items: ["GDPR", "HIPAA", "PCI-DSS", "SOC 2"] },
-  { group: "Engineering", items: ["SQL · Python", "Jenkins · GitLab CI", "Docker · K8s", "Observability"] },
-  { group: "QA / Test", items: ["Shift-left", "TDM-as-a-Service", "Selenium · Playwright", "JMeter"] },
-  { group: "Leadership", items: ["Coaching", "Hiring", "Vendor Mgmt", "Budget Ownership"] },
+  {
+    group: "TDM Tooling",
+    items: ["Delphix Virtualization", "Delphix Masking", "Hyperscale + DCT", "dxToolkit · dxmc", "Actifio"],
+  },
+  {
+    group: "Databases",
+    items: ["Oracle 19c / 12c / 11g", "MS SQL · DB2", "Netezza · MongoDB", "PL/SQL · SQL Dev · Toad"],
+  },
+  {
+    group: "Engineering",
+    items: ["PowerShell · Shell", "Python (utility)", "C# · VB.NET · Web API", "Jenkins · Git · TFS"],
+  },
+  {
+    group: "Cloud & OS",
+    items: ["AWS", "Oracle Cloud (OCI)", "RedHat Linux · Solaris 10", "Windows Server"],
+  },
+  {
+    group: "Compliance",
+    items: ["GDPR Masking Workflow", "Internal & External Audits", "Data Sensitivity Profiling", "Algorithm Custom Build"],
+  },
+  {
+    group: "Programme",
+    items: ["Agile · Rally · JIRA · Redmine", "SOW · SLM · Commercials", "Effort & Cost Estimation", "Onshore / Offshore Delivery"],
+  },
 ];
 
 export const projects = [
   {
     code: "CS / 01",
-    title: "On-demand TDM platform for a global bank",
+    title: "Truist — Enterprise TDM platform at TCS scale",
     summary:
-      "Designed and shipped a self-service portal that gives 1,200 engineers compliant test data in under 9 minutes — down from 5 days.",
-    tags: ["Delphix", "K8s", "Python", "GDPR"],
+      "Lead the offshore Distributed/Infra TDM team for Truist. 40 Continuous Data + 8 Continuous Compliance + 3 Hyperscale Delphix engines under one operating model. Built Salesforce, SAP HANA, Netezza and MongoDB integrations and shipped automations for server migration, on-demand BAU and ESP-driven mainframe deployments.",
+    tags: ["Delphix", "Hyperscale", "DCT", "PowerShell", "ServiceNow"],
     metrics: [
-      { k: "Provisioning time", v: "−97%" },
-      { k: "Audit findings", v: "0" },
-      { k: "Engineers served", v: "1,200" },
+      { k: "Engines under mgmt", v: "51" },
+      { k: "Source systems", v: "9+" },
+      { k: "Team", v: "8 offshore" },
     ],
     image:
       "https://images.unsplash.com/photo-1767099490504-652415837b9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZ3JpZCUyMGFyY2hpdGVjdHVyZXxlbnwwfHx8fDE3NzgyNjkxMDN8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     code: "CS / 02",
-    title: "Synthetic data pipeline for HIPAA workloads",
+    title: "TUI · Delphix-as-a-Service (UK onsite)",
     summary:
-      "Replaced production clones with a privacy-preserving synthetic generator. Removed 14TB of regulated data from non-prod environments.",
-    tags: ["Synthetic", "HIPAA", "Python", "Airflow"],
+      "On-site Delphix Administrator and Environment Manager for TUI's UK Payroll. Kept 9 engines at 100% availability, prepared sub-4-hour P1 environments with the latest production data, and scripted refresh/mask flows for Oracle (Shell) and MSSQL (PowerShell), wired into Jenkins.",
+    tags: ["Delphix", "GDPR", "Jenkins", "Shell", "PowerShell"],
     metrics: [
-      { k: "PII removed", v: "14 TB" },
-      { k: "Coverage parity", v: "98.4%" },
-      { k: "Cost", v: "−42%" },
+      { k: "Records masked / wk", v: "10B+" },
+      { k: "dSource size", v: "230 TB" },
+      { k: "Annual savings", v: "£3.78M" },
     ],
     image:
       "https://images.unsplash.com/photo-1774791242463-ad4fd6386cb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwyfHxkYXRhJTIwdGVjaG5vbG9neSUyMGFic3RyYWN0JTIwbWluaW1hbHxlbnwwfHx8fDE3NzgyNjkxMDN8MA&ixlib=rb-4.1.0&q=85",
   },
   {
     code: "CS / 03",
-    title: "QA platform rebuild — 9 product teams",
+    title: "Vedanta · Hindustan Zinc — Operations digital suite",
     summary:
-      "Programme-managed the rewrite of an aging QA platform. Introduced trunk-based delivery, ephemeral envs, and a shared test data fabric.",
-    tags: ["Agile", "Platform", "TDM", "DevEx"],
+      "As Team Lead at Enaviya, shipped four interlocking applications for Hindustan Zinc (Vedanta): Digital Shift Reporting, Resources & Reserves, Process Safety Management and Safety Interaction. Replaced paper-led shift handovers with audited digital reports across mining sites.",
+    tags: ["C# .NET", "Oracle 12C", "Web API", "jQuery"],
     metrics: [
-      { k: "Lead time", v: "−63%" },
-      { k: "Escaped defects", v: "−71%" },
-      { k: "Teams onboarded", v: "9" },
+      { k: "Apps shipped", v: "4" },
+      { k: "Plants live", v: "Multi-site" },
+      { k: "Role", v: "Team Lead" },
     ],
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
   },
 ];
 
+// Placeholder testimonials — replace with real LinkedIn recommendations when available.
 export const testimonials = [
   {
     quote:
-      "Alex made our TDM programme feel less like a project and more like a product. We finally have data we can trust — on demand.",
-    author: "M. Okafor",
-    role: "Director of Engineering, Northwind",
+      "Vigneshwaran turned our Delphix estate from a daily firefight into a calm, audited service. He treats infrastructure like a product, not a ticket queue.",
+    author: "TDM Stakeholder",
+    role: "Banking client · TCS engagement",
   },
   {
     quote:
-      "One of the rare PMs who can read a query plan and a budget. He'll find the bottleneck before the engineers do.",
-    author: "S. Ramirez",
-    role: "VP Quality, Helix Digital",
+      "The kind of engineer who can hold a P1 bridge, a contract review and a roadmap session in the same week — and leave each one cleaner than he found it.",
+    author: "Delivery Partner",
+    role: "TUI · UK Payroll programme",
   },
   {
     quote:
-      "Calm, exacting, and impossible to surprise. Exactly what you want running a regulated programme.",
-    author: "J. Patel",
-    role: "Head of Compliance, Avant Health",
+      "Deep Delphix expertise, but what stands out is the ownership: licensing, hiring panels, automations, audits — all handled, all on time.",
+    author: "Senior Manager",
+    role: "Tata Consultancy Services",
   },
 ];
 
 export const certifications = [
-  "PMP — Project Management Professional",
-  "PMI-ACP — Agile Certified Practitioner",
-  "Certified Scrum Master (CSM)",
-  "ISTQB Advanced — Test Manager",
-  "AWS Cloud Practitioner",
+  "Delphix Fundamental",
+  "Delphix Data Virtualization Engineer",
+  "Delphix Data Virtualization Specialist",
+  "Delphix Data Masking Engineer",
+  "Delphix Data Masking Specialist",
+  "Delphix Solution Engineer (Pre-sales)",
+  "Delphix Partner — Presales v2.0",
 ];
+
+export const education = {
+  degree: "B.Tech, Information Technology",
+  school: "Dr. N.G.P Institute of Technology, Coimbatore",
+  year: "2010 — 2014",
+  marks: "69.5%",
+};

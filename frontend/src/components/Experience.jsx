@@ -18,8 +18,8 @@ export default function Experience() {
               A career, indexed.
             </h2>
           </div>
-          <p className="hidden md:block font-mono text-[11px] uppercase tracking-[0.2em] text-black/45">
-            {experience.length} entries · 2013 → 2025
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-black/45 hidden sm:block">
+            {experience.length} entries · 2014 → 2025
           </p>
         </div>
 

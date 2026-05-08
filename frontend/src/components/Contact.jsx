@@ -1,5 +1,5 @@
 import { profile } from "../data/portfolio";
-import { Mail, Linkedin, Github, ArrowUpRight, Download } from "lucide-react";
+import { Mail, Linkedin, Phone, ArrowUpRight, Download } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -50,21 +50,19 @@ export default function Contact() {
               >
                 <div className="flex items-center gap-4">
                   <Linkedin size={18} strokeWidth={1.5} className="text-white/60" />
-                  <span className="font-display font-bold text-2xl md:text-3xl tracking-tight">/in/example</span>
+                  <span className="font-display font-bold text-2xl md:text-3xl tracking-tight">{profile.links.linkedinHandle}</span>
                 </div>
                 <ArrowUpRight size={20} strokeWidth={1.5} className="opacity-50 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all" />
               </a>
 
               <a
-                data-testid="contact-github"
-                href={profile.links.github}
-                target="_blank"
-                rel="noreferrer"
+                data-testid="contact-phone"
+                href={`tel:${profile.phone.replace(/\s+/g, "")}`}
                 className="group flex items-center justify-between border-t border-b border-white/15 py-5 hover:pl-4 transition-all"
               >
                 <div className="flex items-center gap-4">
-                  <Github size={18} strokeWidth={1.5} className="text-white/60" />
-                  <span className="font-display font-bold text-2xl md:text-3xl tracking-tight">/example</span>
+                  <Phone size={18} strokeWidth={1.5} className="text-white/60" />
+                  <span className="font-display font-bold text-2xl md:text-3xl tracking-tight">{profile.phone}</span>
                 </div>
                 <ArrowUpRight size={20} strokeWidth={1.5} className="opacity-50 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all" />
               </a>
@@ -77,10 +75,10 @@ export default function Contact() {
                 CARD / 01 — Availability
               </div>
               <div className="font-display font-bold text-2xl tracking-tight mb-2">
-                Open to senior PM /<br />programme leadership.
+                Open to Senior PM /<br />TDM leadership roles.
               </div>
               <p className="text-white/65 text-sm leading-relaxed mb-6">
-                Remote-first. EU & US time zones. Long-term contracts and full-time considered.
+                Onsite/Offshore delivery. Comfortable with global hours.<br />Long-term contracts and full-time considered.
               </p>
               <a
                 data-testid="contact-resume"
@@ -98,9 +96,9 @@ export default function Contact() {
                 CARD / 02 — Now
               </div>
               <ul className="space-y-2 text-sm text-white/75">
-                <li>— Leading TDM @ Northwind FS</li>
-                <li>— Writing about synthetic data</li>
-                <li>— Mentoring 3 mid-level PMs</li>
+                <li>— Leading TDM @ TCS · Truist</li>
+                <li>— Owning 51 Delphix engines</li>
+                <li>— Hiring panel & SOW reviews</li>
               </ul>
             </div>
           </div>
@@ -108,7 +106,7 @@ export default function Contact() {
 
         {/* Footer */}
         <div className="mt-24 pt-8 border-t border-white/10 grid grid-cols-12 gap-6 font-mono text-[10px] uppercase tracking-[0.22em] text-white/45">
-          <div className="col-span-6 md:col-span-3">© {new Date().getFullYear()} A. Morgan</div>
+          <div className="col-span-6 md:col-span-3">© {new Date().getFullYear()} Vigneshwaran B</div>
           <div className="col-span-6 md:col-span-3">Designed & built end-to-end</div>
           <div className="col-span-6 md:col-span-3">Cabinet Grotesk · IBM Plex · JetBrains Mono</div>
           <div className="col-span-6 md:col-span-3 text-right md:text-left">v 1.0 · {new Date().getFullYear()}</div>

@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 const Home = () => {
   useEffect(() => {
     const setTitle = () => {
-      document.title = "Alex Morgan — Project Manager, Test Data Management";
+      document.title = "Vigneshwaran Balasubramanian — Technical Manager, Test Data Management";
     };
     setTitle();
     // Re-assert after the emergent script runs (it overrides on load)

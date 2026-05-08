@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Linkedin, Github, Mail, ArrowUpRight } from "lucide-react";
+import { Linkedin, Mail, Phone, ArrowUpRight } from "lucide-react";
+import { profile } from "../data/portfolio";
 
 const NAV = [
   { label: "01 / About", id: "about" },
@@ -43,7 +44,7 @@ export default function Nav() {
           className="font-display font-black text-lg tracking-tighter flex items-center gap-2"
         >
           <span className="inline-block w-2 h-2 bg-[#002FA7]" />
-          ALEX MORGAN<span className="text-black/40">.</span>
+          VIGNESHWARAN B<span className="text-black/40">.</span>
         </button>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -103,9 +104,9 @@ export default function Nav() {
             </button>
           ))}
           <div className="pt-4 border-t border-black/10 flex items-center gap-5 text-black/60">
-            <a href="mailto:contact@example.com" data-testid="nav-mobile-mail"><Mail size={18} strokeWidth={1.5} /></a>
-            <a href="https://www.linkedin.com/in/example" target="_blank" rel="noreferrer" data-testid="nav-mobile-linkedin"><Linkedin size={18} strokeWidth={1.5} /></a>
-            <a href="https://github.com/example" target="_blank" rel="noreferrer" data-testid="nav-mobile-github"><Github size={18} strokeWidth={1.5} /></a>
+            <a href={`mailto:${profile.email}`} data-testid="nav-mobile-mail"><Mail size={18} strokeWidth={1.5} /></a>
+            <a href={profile.links.linkedin} target="_blank" rel="noreferrer" data-testid="nav-mobile-linkedin"><Linkedin size={18} strokeWidth={1.5} /></a>
+            <a href={`tel:${profile.phone.replace(/\s+/g, "")}`} data-testid="nav-mobile-phone"><Phone size={18} strokeWidth={1.5} /></a>
           </div>
         </div>
       </div>

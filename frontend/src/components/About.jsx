@@ -1,4 +1,4 @@
-import { profile } from "../data/portfolio";
+import { profile, education } from "../data/portfolio";
 import { useReveal } from "../hooks/use-reveal";
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
               }`}
             >
               <div className="font-mono text-[10rem] md:text-[14rem] leading-[0.8] tracking-[-0.06em] font-medium">
-                12<span className="text-[#002FA7]">.</span>
+                {profile.yearsOfExperience}<span className="text-[#002FA7]">.</span>
               </div>
               <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-black/60 mt-4">
                 Years building delivery systems<br />for regulated software.
@@ -51,6 +51,18 @@ export default function About() {
               {profile.intro.map((p, i) => (
                 <p key={i} data-testid={`about-paragraph-${i}`}>{p}</p>
               ))}
+            </div>
+
+            <div data-testid="about-education" className="mt-10 border-t border-black/10 pt-6 max-w-2xl">
+              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-black/55 mb-2">
+                Education
+              </div>
+              <div className="font-display font-semibold text-lg tracking-tight">
+                {education.degree}
+              </div>
+              <div className="text-sm text-black/65 mt-1">
+                {education.school} · {education.year} · {education.marks}
+              </div>
             </div>
           </div>
         </div>
